@@ -11,6 +11,7 @@ services:
     volumes:
       - /var/cache/ntfy:/var/cache/ntfy
       - /etc/ntfy:/etc/ntfy
+      - /var/lib/ntfy:/var/lib/ntfy
     ports:
       - 80:80
     restart: unless-stopped
